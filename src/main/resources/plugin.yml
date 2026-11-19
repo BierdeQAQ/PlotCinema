@@ -1,0 +1,20 @@
+name: PlotCinema
+version: '1.0.0'
+main: io.bukkitcode.plotcinema.Plotcinema
+api-version: '1.20'
+authors: ['Bierder']
+description: '剧情镜头演出插件 - 通过传送玩家视角实现剧情动画效果，支持现场录制、平滑插值、多人同步观看'
+commands:
+    plot:
+        description: 'PlotCinema 剧情插件主命令'
+        aliases: ['plotcinema', 'pc']
+permissions:
+    plotcinema.play:
+        description: '允许播放剧情'
+        default: true
+    plotcinema.record:
+        description: '允许录制剧情'
+        default: false
+    plotcinema.admin:
+        description: '管理员权限（删除剧情、重载配置）'
+        default: false
